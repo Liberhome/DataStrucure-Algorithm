@@ -20,6 +20,7 @@ class Solution {
              //every line's first character is 1
              myRow.add(1);
              //keyPoint：其实就是因为不同人找到的这个不同才有了不同的方法 这里的这个应该是普通人都可以看到的规律
+             //确定每一列的数，每一列最多有count那么多个数，且当前数字等于上一行同列与上一行同列左边一个数字的和
              for(int i=1 ; i<count; i++){
                  myRow.add(previousRow.get(i-1)+previousRow.get(i));
              }
